@@ -2,8 +2,22 @@
 gcc -E xx.c -o xx.i    只对目标文件进行预编译处理
 gcc -S xx.c/xx.i -o xx.s    只对目标文件进行预编译处理和编译处理,不会进行汇编和链接
 gcc -c xx.c -o xx.exe    执行预编译，编译，汇编和链接过程，生成可执行代码
+gcc -L /lib/    指定链接库的目录
+gcc -I /lib/xx.a    指定需要链接的库名称
+
+
 
 -----------------GNU Make----------------
 =    变量的真实值取决于它所引用的变量的最后一次有效值
 :=   变量值由初次定义决定
 ?=   被赋值变量未被赋值时当前赋值语句有效
+VPATH = src:../headers    存储搜索路径的特殊变量
+vpath <pattern> <directories>     为符合模式 <pattern> 的文件指定搜索目录 <directories>
+
+$(subst <from>,<to>,<text>)    函数 subst 用来完成字符串替换
+$(patsubst <from>,<to>,<text>)    函数 patsubst 用来完成模式字符串替换
+$(dir <names…>)    函数 dir 用来获取目录
+$(notdir <names…>)    去除文件中的目录部分
+$(addprefix -I,${INCLUDE_DIR})    增加前缀
+$(wildcard *.c)    将通配符展开
+
