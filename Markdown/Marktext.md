@@ -1,15 +1,12 @@
 # Markdown Syntax
 
--------------
-## Chapter 1
-Content for chapter one.
-
 ## Chapter 2
 Content for chapter one.
 
 ## Chapter 3 
 Content for chapter one.
 
+------------
 ```
 # 这是一级标题
 ## 这是二级标题
@@ -74,7 +71,12 @@ _斜体_
 - 文本2
 
 ------------
+```
+key word: <kbd>one</kbd> +`one`= two
+```
+key word: <kbd>one</kbd> +`one`= two
 
+------------
 ```
 <http://www.baidu.com/>
 ```
@@ -108,7 +110,7 @@ _斜体_
 ------------
 
 ```
-`printf("hello")`
+printf("hello")
 ```
 
 `printf("hello")`
@@ -132,7 +134,7 @@ _斜体_
 
 -------------
 
-  * [Chapter 1](#chapter-1)
+  * [这是一级标题](#这是一级标题)
   * [Chapter 2](#chapter-2)
   * [Chapter 3](#chapter-3)
   
