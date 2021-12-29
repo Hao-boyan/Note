@@ -1,12 +1,5 @@
 # Markdown Syntax
 
-## Chapter 2
-Content for chapter one.
-
-## Chapter 3 
-Content for chapter one.
-
-------------
 ```
 # 这是一级标题
 ## 这是二级标题
@@ -55,6 +48,13 @@ _斜体_
 ------------
 
 ```
+换行<br>换行  换行
+```
+换行<br>换行  换行
+
+------------
+
+```
 ~~这是加删除线的文字~~
 ```
 
@@ -65,10 +65,17 @@ _斜体_
 ```
 - 文本1
 - 文本2
+   - 文本3
+1. 文本1
+2. 文本2
 ```
 
 - 文本1
 - 文本2
+   - 文本3
+
+1. 文本1
+2. 文本2
 
 ------------
 ```
@@ -108,17 +115,27 @@ key word: <kbd>one</kbd> +`one`= two
 | ext    | extension to be used for dest files.                                      |
 
 ------------
-
 ```
-printf("hello")
+> ```c
+> int a=1;
+> if(a == 1)
+>     a=0;
+> printf("hello%d",a);
+> ``` 
 ```
 
-`printf("hello")`
+```c
+int a=1;
+if(a == 1)
+    a=0;
+printf("hello%d",a);
+```
 
 ------------
 
 ```
 >123
+
 ```
 
 > 123
@@ -134,10 +151,19 @@ printf("hello")
 
 -------------
 
+```
   * [这是一级标题](#这是一级标题)
-  * [Chapter 2](#chapter-2)
-  * [Chapter 3](#chapter-3)
+  * [这是二级标题](#这是二级标题)
+  * [Markdown Syntax](#Markdown-Syntax)
+```
+  * [这是一级标题](#这是一级标题)
+  * [这是二级标题](#这是二级标题)
+  * [Markdown Syntax](#Markdown-Syntax)
   
 -------------
+
+```
+![](https://www.baidu.com/img/flexible/logo/pc/result.png "baidu.com link")
+```
 
 ![](https://www.baidu.com/img/flexible/logo/pc/result.png "baidu.com link")
